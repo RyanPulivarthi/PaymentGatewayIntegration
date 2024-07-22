@@ -1,13 +1,9 @@
-package com.myproject.paymentdemo.PaymentStrategy;
+package com.myproject.paymentdemo.PaymentService;
 
-import com.razorpay.PaymentLink;
-import com.razorpay.RazorpayClient;
-import com.razorpay.RazorpayException;
-import org.json.JSONObject;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RazorypayUrl implements PaymentStrategy{
+public class RazorypayUrl implements PaymentServiceInterface {
     @Override
     public String generateUrl(Long id,Long amount){
 
